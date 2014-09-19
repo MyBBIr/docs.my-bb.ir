@@ -1,9 +1,9 @@
-name:      MyBB Documentation
+name:      مستندات مای بی‌بی
 markdown:  redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "tables", "with_toc_data", "autolink"]
 pygments:  true
 highlighter: pygments
 permalink: pretty
-baseurl:   //docs.mybb.com
-mainsiteurl: //www.mybb.com
+baseurl:   //docs.my-bb.ir
+mainsiteurl: //my-bb.ir
