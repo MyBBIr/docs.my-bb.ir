@@ -6,4 +6,4 @@ pygments:  true
 highlighter: pygments
 permalink: pretty
 baseurl:   //docs.my-bb.ir
-mainsiteurl: //my-bb.ir
+mainsiteurl: //mybb.com
