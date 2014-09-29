@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Install"
+title:  "نصب"
 categories: [install]
 ---
 

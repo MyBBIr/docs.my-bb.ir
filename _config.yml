@@ -7,3 +7,4 @@ highlighter: pygments
 permalink: pretty
 baseurl:   //docs.my-bb.ir
 mainsiteurl: //mybb.com
+encoding: utf-8
