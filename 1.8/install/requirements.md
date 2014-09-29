@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Requirements"
+title:  "موارد مورد نیاز"
 categories: [install]
 ---
 

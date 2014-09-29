@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Upgrade"
+title:  "بروزرسانی"
 categories: [install]
 ---
 
