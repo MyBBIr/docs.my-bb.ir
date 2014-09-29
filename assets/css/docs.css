@@ -67,7 +67,7 @@ article#docs_page .toc {
     border-spacing: 0px;
     padding: 10px;
   	width: auto;
-	float: right;
+	float: left;
 }
 article#docs_page .toc:empty {
 display: none;
@@ -82,6 +82,6 @@ article#docs_page .top-level-header {
   display:inline;
 }
 article#docs_page .back-to-top {
-  margin-left:5px;
+  margin-right:5px;
   cursor:pointer;
 }
