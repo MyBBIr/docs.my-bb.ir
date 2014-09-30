@@ -32,37 +32,37 @@ categories: [install]
 
 فرایند بارگذاری فایل‌های شما به پیکربندی میزبان شما بستگی دارد،ولی FTP رایج‌ترین روش است. [FileZilla](https://filezilla-project.org/) یک سرویس‌دهنده‌ی FTP رایگان است که برای آپلود MyBB مناسب است.
 
-### File Permissions
+### دسترسی فایل‌ها
 
-Certain file permissions are required for MyBB to function correctly. Once you've uploaded your files you will need to set the permissions on certain files and directories.
+دسترسی‌های خاص برای فایل‌های مای بی‌بی برای درستی کار آن لازم است. هنگامی که فایل‌های خود را آپلود کردید، شما نیاز خواهید داشت که دسترسی فایل‌ها و پوشه‌های خاص را تعیین کنید.
 
-** Before applying file permissions, rename config.default.php to config.php
+** قبل از اعمال کردن دسترسی‌های فایل‌ها، فایل config.default.php را به config.php تغییر نام دهید.
 
-#### *nix systems via CHMOD
+#### سیستم‌های *nix به وسیله‌ی CHMOD
 
-If you have SSH access, you can apply the necessary permissions via the following command, executed from your root MyBB directory:
+اگر شما اجازه‌ی SSH دارید، شما می‌توایند دسترسی‌های لازم را ازطریق دستور زیر اعمال کنید، این را از طریق ریشه‌ی MyBB اعمال کنید:
 
 ```sh
 chmod 666 inc/config.php inc/settings.php
 chmod 777 cache/ cache/themes/ uploads/ uploads/avatars/
 ```
 
-Optionally, you can also apply the following permissions:
+در صورت تمایل، شما همچنین می‌توانید مجوزهای زیر را اعمال کنید:
 
 ```sh
 chmod 666 inc/languages/english/*.php inc/languages/english/admin/*.php
 chmod 777 cache/ cache/themes/ uploads/ uploads/avatars/ admin/backups/
 ```
 
-If you are using FileZilla you can right click on a file or directory and click **File Attributes** to modify the permissions of that file.
+اگر شما از FileZilla استفاده می‌کنید، شما می‌توانید بر روی فایل راست کلیک کرده و بر روی **File Attributes** برای ویرایش دسترسی های فایل کلیک کنید.
 
-#### Windows Systems
+#### سیستم‌های ویندویز
 
-On Windows systems you will need to follow [these instructions](http://technet.microsoft.com/en-us/library/bb727008.aspx). In general the files and directories listed above require **Full modify** permissions.
+در سیستم‌های ویندویز شما نیاز به دنبال‌کردن [این دستور‌العمل‌ها](http://technet.microsoft.com/en-us/library/bb727008.aspx) دارید. به طورکلی فایل‌ها و پوشه‌های ذکرشده در بالا نیاز به  دسترسی **اصلاح کامل** دارند.
 
-## Installer
+## نصب کننده
 
-To access the installer you must navigate to the `install/` directory of your site in your web browser. For example, if your domain is example.com and you uploaded your MyBB files to the root directory then navigate to http://example.com/install, or if you uploaded to a `forums/` subdirectory then navigate to http://example.com/forums/install.
+برای دسترسی به نصب‌کننده شما باید به پوشه‌ی `install/` از سایت‌خود در مرورگر خود بروید. به طور مثال،اگر دامنه‌ی شما example.com بوده و شما فایل‌های مای بی‌بی را در ریشه‌ی وب‌سایت خود آپلود کرده باشید، باید به http://example.com/install بروید، یا اگر شما در یک پوشه‌ی فرعی مثل `forums/` آپلود کرده‌باشید باید به  http://example.com/forums/install بروید.
 
 ### Welcome
 
