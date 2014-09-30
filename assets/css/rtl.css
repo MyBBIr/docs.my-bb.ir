@@ -673,7 +673,7 @@ ul#slider {
 	width: 425px;
 	height: 270px;
 	margin: 15px 60px 0 0;
-	background: #fff url("http://www.mybb.com/assets/images/home/feature_1.png") 0 0 no-repeat;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_1.png") top right no-repeat;
 	float: right;
 }
 
@@ -743,7 +743,7 @@ ul#slider {
 	width: 375px;
 	height: 250px;
 	margin: 15px 5px 0 0;
-	background: #fff url("http://www.mybb.com/assets/images/home/feature_2.png") 0 0 no-repeat;
+	background: #fff url("http://www.mybb.com/assets/images/home/feature_2.png") top right no-repeat;
 	float: right;
 }
 
@@ -780,7 +780,7 @@ ul#slider {
 	width: 375px;
 	height: 250px;
 	margin: 15px 100px 0 0;
-	background: #fff url("http://www.mybb.com/assets/images/home/customize_large.png") 0 0 no-repeat;
+	background: #fff url("http://www.mybb.com/assets/images/home/customize_large.png") top right no-repeat;
 	float: right;
 }
 
@@ -788,7 +788,7 @@ ul#slider {
 	width: 275px;
 	height: 200px;
 	margin: 80px -460px 0 0;
-	background: #fff url("http://www.mybb.com/assets/images/home/customize_small.png") 0 0 no-repeat;
+	background: #fff url("http://www.mybb.com/assets/images/home/customize_small.png") top right no-repeat;
 	float: right;
 }
 

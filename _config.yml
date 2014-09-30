@@ -6,5 +6,5 @@ pygments:  true
 highlighter: pygments
 permalink: pretty
 baseurl:   //docs.my-bb.ir
-mainsiteurl: //mybb.com
+mainsiteurl: //portal.my-bb.ir
 encoding: utf-8

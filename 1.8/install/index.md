@@ -4,27 +4,27 @@ title:  "نصب"
 categories: [install]
 ---
 
-Thanks for choosing MyBB as the discussion board software for your community!
+سپاس از شما برای انتخاب مای بی‌بی به عنوان نرم‌افزار تالارگفتگو خود!
 
-We've broken down the installation into many smaller steps. Don't worry if it looks daunting; if you need any help, just post a thread in one of our [Support Forums](http://community.mybb.com/) for the version you are running, and we will help you out.
+ما فرایند نصب را به بسیاری مراحل کوچک‌تر شکسته‌ایم. اگر آن دلهره آور به نظر می‌رسد، نگران نباشید; اگر شما نیاز به هرگونه کمکی داشتید می‌توانید با ایجاد یک تاپیک در [انجمن‌های پشتیبانی](http://my-bb.ir/) از ما کمک بخواهید و ما به شما کمک خواهیم کرد.
 
-* MyBB comes with the [features](http://www.mybb.com/features) that one would expect from a bulletin board software, as well as some unique features not found elsewhere.
-* Having trouble with MyBB? The support at the [MyBB Community Forums](http://community.mybb.com/) is free and available to anyone using MyBB, supported by the [volunteer team](http://www.mybb.com/about/team/), and other members of the community!
-* MyBB is easily customizable to suit your site's needs and looks.
-* Best of all, MyBB is [released under the GNU Lesser GPL licence](http://www.mybb.com/about/license), and therefore it's [entirely free](http://www.gnu.org/philosophy/free-sw.html)! No forced advertisements, no cost, no sign-ups, no forced email subscriptions!
-* You will require a web host to run your forum
-* Your web host must satisfy a few basic requirements for MyBB to run properly.
+* مای بی‌بی با [ویژگی‌هایش](http://portal.my-bb.ir/features) که از یک نرم‌افزار انجمن ساز انتظار می‌رود و برخی ویژگی‌های منحصر به فرد که در جای دیگری یافت نمی‌شوند می‌آید.
+* مشکلی با مای بی‌بی دارید؟ پشتیبانی در [انجمن‌های مای بی‌بی فارسی](http://my-bb.ir/) به صورت رایگان برای همه‌ی مردم صورت می‌پذیرد!
+* مای بی‌بی به سادگی قابل سفارشی‌سازی با توجه به نیازهای سایت شما می‌باشد.
+* بهترین برای همه، مای بی‌بی [تحت لیسانس GNU Lesser GPL](http://www.mybb.com/about/license) منتشر می‌شود و درنتیجه این واقعا [به طور کامل رایگان است](http://www.gnu.org/philosophy/free-sw.html)! بدون هیچ تبلیغ اجباری، هزینه‌، هیچ ثبت‌نامی و هیچ اشتراک ایمیلی اجباری‌ای!
+* شما نیاز به یک میزبان وب برای اجرای انجمن خود خواهید داشت
+* میزبان شما باید چند نیاز اساسی را برآورده سازد تا MyBB به‌درستی اجرا شود.
 
-## Preparation
+## آماده سازی
 
-### Downloading the MyBB Files
+### دریافت کردن فایل‌های مای بی‌بی
 
-1. First, download the latest MyBB package from the [MyBB downloads page](http://www.mybb.com/download)
-2. After downloading the zip file, unzip/decompress the file.
-    * On Windows you can either use the [built in utility](http://windows.microsoft.com/en-au/windows-vista/compress-and-uncompress-files-zip-files) or an application such as [7-zip](http://www.7-zip.org/)
-    * On *nix systems you can run `unzip mybb-package-name.zip`
+1. درابتدا، بسته‌ی مای بی‌بی را از طریق [صفحه‌ی دانلود‌های مای بی‌بی](http://download.my-bb.ir) دریافت کنید
+2. پس از دریافت فایل zip ، آن را unzip/decompress کنید.
+    * در ویندوز شما می‌توانید از  [built in utility](http://windows.microsoft.com/en-au/windows-vista/compress-and-uncompress-files-zip-files) یا یک نرم‌افزار مثل  [7-zip](http://www.7-zip.org/) استفاده نمائید.
+    * در سیستم‌های  *nix شما می‌توانید فرمان `unzip mybb-package-name.zip` را اجرا کنید
 
-### Uploading Files
+### بازگذاری فایل‌ها
 
 In the archive you extracted earlier there will be two directories: Documentation and Upload. The Documentation directory contains useful information, however you need not upload it to your server.
 
