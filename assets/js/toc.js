@@ -11,7 +11,7 @@ $(document).ready(function() {
   var highest_level = headers.map(function(_, ele) { return get_level(ele) }).get().sort()[0]
   var return_to_top = '<i class="icon-arrow-up back-to-top"> </i>'
 
-  var level = get_level(headers[0]), this_level, html = "<h3>Contents</h3> <ol>";
+  var level = get_level(headers[0]), this_level, html = "<h3>محتویات</h3> <ol>";
   headers.on('click', function() {
     if (!no_back_to_top_links) window.location.hash = this.id
   }).addClass('clickable-header').each(function(_, header) {

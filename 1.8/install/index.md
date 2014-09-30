@@ -26,11 +26,11 @@ categories: [install]
 
 ### بازگذاری فایل‌ها
 
-In the archive you extracted earlier there will be two directories: Documentation and Upload. The Documentation directory contains useful information, however you need not upload it to your server.
+در فایل Zip پس از استخراج آن دو پوشه وجود دارد: Documentation و Upload. پوشه‌ی Documentation شامل اطلاعات مفیدی در مورد مای بی‌بی است، که شما نیاز به آپلود آن ندارید.
 
-Next, you will need to upload the **contents** of the `Upload/` directory to either your website root directory (sometimes called `www`, `htdocs` or `httpdocs`), or a subdirectory of of your root directory (such as <root>/forums or <root>/community).
+در ادامه، شما نیاز به آپلود **محتویات** پوشه‌ی `Upload/` در پوشه‌ی ریشه‌ی سایت خود دارید (در برخی مواقع `www`, `htdocs` یا `httpdocs` خوانده می‌شود)، یا یک پوشه‌ی فرعی از پوشه‌ی اصلی خود (مثل <root>/forums یا <root>/community).
 
-The process of uploading your files will depend on your hosting configuration, but FTP is the most common method. [FileZilla](https://filezilla-project.org/) is a free FTP client suitable for uploading MyBB.
+فرایند بارگذاری فایل‌های شما به پیکربندی میزبان شما بستگی دارد،ولی FTP رایج‌ترین روش است. [FileZilla](https://filezilla-project.org/) یک سرویس‌دهنده‌ی FTP رایگان است که برای آپلود MyBB مناسب است.
 
 ### File Permissions
 
