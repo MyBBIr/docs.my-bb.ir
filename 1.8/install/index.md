@@ -82,131 +82,131 @@ chmod 777 cache/ cache/themes/ uploads/ uploads/avatars/ admin/backups/
 
 ### بررسی نیاز مندی‌ها
 
-This page checks that your server meets the [requirements](/install/requirements) for running MyBB. If it does not, you will be notified on this page. If everything is working correctly, all you need to do is click on the **Next** button on this page.
+این صفحه بررسی می‌کند که سرور شما [نیاز‌مندی‌ها](/install/requirements)ی لازم را برای اجرای مای بي‌بی دارا باشد. اگر این‌طور نبود در این صفحه آگاه خواهید شد. اگر همه‌چیز به درستی کار می‌کرد, شما باید بر روی دکمه‌ی **بعدی** در این صفحه کلیک کنید.
 
 [![Requirements screen](/assets/images/install/requirements.jpg)](/assets/images/install/requirements.jpg)
 
-### Database Configuration
+### پیکربندی پایگاه داده
 
-This page is for the configuration of your database. If you have javascript enabled, only fields relevant to your selected engine will be displayed. Below is an explanation of each field:
+این صفحه برای پیکربندی پایگاه داده شماست. اگر جاوااسکریپت فعال باشد، شما تنها فیلد‌هایی را خواهید دید که که مربوط به موتور پایگاه داده انتخاب شده‌ی شما باشد. در زیر به توضیح هریک از این فیلد‌ها می‌پردازیم:
 
-#### Database Engine
+#### موتور پایگاه داده
 
-This is the engine that you wish to use. At most, the options available will be MySQL, MySQL Improved, SQLite 3, or PgSQL. Most likely, there is only MySQL or something similar, so this should be the right choice for you. If you have the option between MySQL and MySQL Improved, usually the Improved is the better choice.
+این موتوری است که شما از آن استفاده خواهید کرد. حداکثر, این گزینه‌های MySQL, MySQL Improved, SQLite 3, یا PgSQL. به احتمال زیاد هستند، فقط MySQL یا چیزی شبیه به آن انتخاب خوبی برای شما خواهند بود. اگر شما گزینه‌های MySQL و MySQL Improved را داشتید، معمولا Improved انتخاب بهتری است.
 
-#### Database Host
+#### هاست پایگاه داده
 
-This is the server where the database is. Unless told otherwise by your host, this should be localhost. This option is not necessary for SQLite installations.
+این سروری است که پایگاه داده در آن قرار دارد. اگر چیزی توسط هاست شما گفته نشده‌اس، این باید localhost باشد. این گزینه برای نصب‌های SQLite نیاز نیست.
 
-#### Database Username
+#### نام کاربری پایگاه داده
 
-This is the username you created or you use to access your database for MyBB. This option is not necessary for SQLite installations.
+نام‌کاربری‌ای که شما ساخته اید یا برای دسترسی به پایگاه داده‌خود برای مای بي‌بی استفاده می‌کنید. این گزینه برای نصب‌های SQLite لازم نیست.
 
-#### Database Password
+#### رمز پایگاه داده
 
-This is the password for the database username that you entered. This option is not necessary for SQLite installations.
+رمزعبوری که برای نام‌کاربری‌ای که وارد کرده‌اید استفاده می‌کنید. این گزینه برای SQLite لازم نیست.
 
-#### Database Name
+#### نام پایگاه داده
 
-This is the name of the database that you would like MyBB to install to. This option is not necessary for SQLite installations.
+نام پایگاه داده‌ای که می‌خواهید مای بی‌بی در آن نصب شود. این گزینه برای نصب‌های SQLite نیاز نیست.
 
-#### Database Path
+#### مسیر پایگاه داده
 
-This is the path where you want to save the SQLite file. This option is only necessary if you have selected **SQLite 3**.
+مسیری که می‌خواهید فایل SQLite در آنجا ذخیره شود. این گزینه تنها در صورتی نیاز است که شما  **SQLite 3** را انتخاب کرده باشید.
 
-#### Table Prefix
+#### پیشوند جدول
 
-This is the prefix for the tables in the database. Unless you already have a MyBB installation in the database you entered with the prefix `mybb_`, you should leave this how it is. If you do already have a MyBB installation in the database, you should change it to something else.
+این پیشوندی برای جدول‌ها در پایگاه داده است. مگر در مواردی که شما یک نصب مای بی‌بی در پایگاه داده انتخاب شده با پیشوند جدول  `mybb_` داشته باشید, بهتر است که همان چیزی که هست رهایش کنید. اگر شما یک نصب دیگری را قبلا در این پایگاه داده انجام داده اید، شما باید این را به چیز دیگری تغییر دهید.
 
-Once you have entered the details correctly, you should click on the **Next** button on the page. If the installer cannot access the database, you will be told so, meaning you did not enter one (or more) of the details correctly.
+هنگامی که اطلاعات را به درستی وارد کردید، شما باید بر روی گزینه‌ی **بعدی** کلیک کنید. اگر نصب کننده نتواند به پایگاه داده دسترسی پیدا کند، به شما گفته خواهد شد، این به این معنی‌است که شما یک(یا بیشتر) از اطلاعات را درست وارد نکرده‌اید.
 
-If you are having trouble with this step, contact your web host to see what is the correct host, username, password combination to use. This usually can be found in your host's control panel (eg. cPanel, Ensim, DirectAdmin, Plesk).
+اگر شما مشکلاتی با این مرحله دارید، با میزبان وبتان تماس بگیرید تا بفهمید که مقدار درست هاست، نام‌کاربری و رمز عبور چیست. این معمولا در کنترل پنل هاست شما یافت می‌شود (مثل cPanel, Ensim, DirectAdmin, Plesk).
 
 [![Database screen](/assets/images/install/database.jpg)](/assets/images/install/database.jpg)
 
-### Table Creation
+### ساخت جدول‌ها
 
-In this step, the database tables are inserted. No user input is needed on this page, so click the **Next** button when it appears. This page may take several moments to load, so please be patient while it does and inserts the database tables.
+در این مرحله، جدول‌های پایگاه داده اضافه می‌شوند. هیچ ورودی کاربری در این مرحله نیاز نیست، پس بر روی *بعدی** کلیک کنید وقتی که ظاهر شد. این صفحه ممکن است چند لحظه برای بارگذاری زمان ببرد* پس لطفا تا زمانی که جدول‌ها به پایگاه داده اضافه شوند صبر کنید.
 
 [![Table creation screen](/assets/images/install/table.jpg)](/assets/images/install/table.jpg)
 
-### Data Insertion
+### افزودن محتواهای خام
 
-In this step, the default data is inserted into the database tables created above. No user input is needed on this page, so click the **Next** button when it appears.
+در این مرحله، اطلاعات پیش‌فرض به جدول‌های پایگاه داده اضافه می‌شوند. هیچ ورودی کاربری در این صفحه نیاز نیست، بر پس روی **بعدی** زمانی که ظاهر شد کلیک کنید.
 
 [![Data insertion screen](/assets/images/install/populate.jpg)](/assets/images/install/populate.jpg)
 
-### Theme Installation
+### افزودن پوسته
 
-The theme data is loaded into the forum at this point. No user input is needed on this page, so click the **Next** button when it appears.
+اطلاعات پوسته در این صفحه در انجمنتان بارگذاری می‌شوند. هیچ اطلاعات کاربری در این صفحه لازم نیست، پس وقتی که کلید بعدی ظاهر شد بر روی **بعدی** کلیک کنید.
 
 [![Theme installation screen](/assets/images/install/theme.jpg)](/assets/images/install/theme.jpg)
 
-### Board Configuration
+### پیکربندی انجمن
 
-These are settings that are critical to running your board. MyBB tries to fill these settings with the correct value; however, you should double check to make sure these settings are set properly. These settings can be changed later if required.
+اینها تنظیماتی هستند که برای اجرای انجمن شما مهم هستند. مای بی‌بی تلاش می‌کند که این فیلد‌ها را با مقدار صحیح پر کند؛ پس شما باید دوباره بررسی کنید که این فیلد‌ها با مقدار درستی پر شده باشند. این تنظیمات بعدا در صورت نیاز می‌توانند تغییر یابند.
 
-#### Forum Name
+#### نام انجمن
 
-This is the name of the forums that you are installing. By default, it is **Forums**.
+این نام انجمنی هست که شما دارید آنرا نصب می‌کنید. به صورت پیش‌فرض،این  **Forums** است.
 
-#### Forum URL
+#### URL انجمن
 
-This is the URL to your forums. This should be filled in automatically, but it is always good to make sure that the URL is correct. Remember that there should not be a trailing slash.
+این آدرس انجمن‌های شماست. این باید به صورت خودکار پر شود، ولی همیشه خوب است که اطمینان حاصل کنید که این URL صحیح است. به‌یاد داشته باشید که این نباید شامل اسلش پایانی باشد.
 
-#### Website Name
+#### نام وب‌سایت
 
-This is the name of your website (if you have one). This setting is for the **Your Website** link at the bottom of the forums. The name is simply the text that you wish to use for the your website link.
+این نام وب‌سایت شما است(اگر شما یکی داشته باشید). این تنظیم برای لینک **وب‌سایت شما** در پایین انجمن‌هاست. این نام متن ساده‌ای است که برای لینک وب‌سایت شما استفاده خواهد شد.
 
-#### Website URL
+#### URL وب‌سای
 
-This is the URL to your website (if you have one). If you do not have a website, you can either leave it blank or enter your forums URL.
+این URL وب‌سایت شما است (اگر یکی داشته باشید). اگر شما وب سایتی ندارید، می‌توانید این را خالی رها کنید.
 
-#### Cookie Domain
+#### دامنه کوکی
 
-This is the domain for the cookie to be set to. In 1.4 and later, this field is pre-filled with the appropriate data.
+این دامنه‌ای است برای کوکی‌ها با آن تنظیم می‌شوند. در ۱.۴ به بعد، این فیلد به صورت پیش‌فرض با داده‌های مناسب پر می‌شود.
 
-#### Cookie Path
+#### مسیر کوکی
 
-This is the path for the cookie to be set to. If you have more than one MyBB installation on the domain, it is recommended that you change this to the path to your forum (for instance, `/forums/`). In versions 1.4 and later, this field is pre-filled with the appropriate data.
+مسیری که کوکی‌ها با آن تنظیم شوند. اگر شما بیش‌از یک مای بی‌بی بر روی دامنه‌ی خود نصب کرده‌اید، پیشنهاد می‌شود که این را به مسیر انجمن خود (به طور مثال، `/forums/`) تغییر دهید. این فیلد در ۱.۴ به بعد به صورت پیش‌فرض با داده‌های مناسب پر می‌شود.
 
-#### Contact Email
+#### ایمیل تماس
 
-This is your email address that your members can contact you by via the **Contact Us** link at the bottom of your forum. This is also the forum webmaster's email that will be used when the forum sends emails.
+این ایمیل شما است که کاربران بتوانند از طریق لینک **تماس با ما** در پایین انجمنتان با شما در تماس باشید. این همچنین ایمیل وب‌مستر انجمن شما نیز خواهد بود و برای ایمیل‌هایی که انجمنتان ارسال می‌کند استفاده خواهد شد.
 
 [![Config screen](/assets/images/install/config.jpg)](/assets/images/install/config.jpg)
 
-### Administrator User
+### کاربر مدیرکل
 
-The administrator account is the first account on your forum (identified by the user ID #1). This account has permissions to all sections in the Admin CP.
+حساب‌کاربری مدیر کل اولین حساب کاربری در انجمن شما است (شناخته‌شدن با شناسه‌ی کاربری #1). این کاربر به همه‌ی بخش‌های پنل مدیریت دسترسی دارد.
 
-#### Username
+#### نام کاربری
 
-This is the username of the administrator account that you are creating.
+نام کاربری برای مدیر‌کلی که در حال ساخت آن هستید.
 
-#### Password and Retype Password
+#### رمزعبور و تکرار رمزعبور
 
-This is the password for the administrator account. Be sure to type it in correctly in both fields.
+این رمز عبور حساب مدیریت است، دقت کنید که این رمزرا به درستی در هردو فیلد وارد کرده باشید.
 
-#### Email Address
+#### آدرس ایمیل
 
-This is the email address that the administrator account will be created with.
+این آدرس ایمیلی است که حساب مدیریت با آن ساخته می‌شود.
 
 [![Admin user screen](/assets/images/install/admin.jpg)](/assets/images/install/admin.jpg)
 
-### Finishing Setup
+### مرحله‌ی پایانی
 
-**Congratulations**! You have successfully installed your MyBB. You should remove the `install/` directory from your server now to prevent anyone else from running the installation again. MyBB will not run unless the installer is removed or locked.
+**تبریک می‌گوییم**! شما با موفقیت مای بی‌بی خود را نصب کرده‌اید. شما می‌توانید پوشه‌ی `install/` را برای جلوگیری از اجازه‌دادن به اجرای دوباره‌ی فرایند نصب پاک کنید. مای بی‌بی اجرا نمی‌شود مگر اینکه نصب‌کننده حذف شده‌باشد یا قفل شده‌باشد.
 
-If you simply wish to lock your MyBB install directory, create a new file in the install directory called `lock`, which will disallow access to the installer/upgrader while it exists.
+اگر شما می‌خواهید که پوشه‌ی نصب مای بي‌بی را قفل کنید، یک فایل به نام `lock` در پوشه‌ی install ایجاد کنید، تازمانی که این فایل وجود داشته باشید، مای بی‌بی اجازه‌ی اجرای فرایند نصب/بروزرسانی را نمی‌دهد.
 
 [![Finishing screen](/assets/images/install/finish.jpg)](/assets/images/install/finish.jpg)
 
 ## SSH Quick Install
 
-If you have SSH access on your *nix server you may prefer to use one of the following methods which will allow you to skip the preparation steps mentioned above.
+اگر شما دسترسی SSH در سرور *nix خود دارید، می‌توانید با فرمان‌های زیر فرایند آماده سازی را انجام دهید.
 
-### Requirements:
+### نیاز‌ها:
 
 * access - Command Line Access to the Server
 * wget, aria2 (version >= 1.9.3), curl, or lynx - Command used, depends on which you choose. These should be present or installable on any *NIX (Linux, UNIX, or Mac) based server
