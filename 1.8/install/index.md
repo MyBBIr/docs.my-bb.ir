@@ -64,23 +64,23 @@ chmod 777 cache/ cache/themes/ uploads/ uploads/avatars/ admin/backups/
 
 برای دسترسی به نصب‌کننده شما باید به پوشه‌ی `install/` از سایت‌خود در مرورگر خود بروید. به طور مثال،اگر دامنه‌ی شما example.com بوده و شما فایل‌های مای بی‌بی را در ریشه‌ی وب‌سایت خود آپلود کرده باشید، باید به http://example.com/install بروید، یا اگر شما در یک پوشه‌ی فرعی مثل `forums/` آپلود کرده‌باشید باید به  http://example.com/forums/install بروید.
 
-### Welcome
+### خوش‌آمد گویی
 
-If you have successfully uploaded your files and navigated to the installer you should be presented with a page like this:
+اگر شما با موفقیت فایل‌های مای بي‌بی را آپلود کرده و به نصب کننده دسترسی پیدا کرده باشید، صفحه‌ای مانند صفحه‌ی زیر را مشاهده خواهید کرد:
 
 [![Welcome screen](/assets/images/install/welcome.jpg)](/assets/images/install/welcome.jpg)
 
-All you need to do is click **Next** on this page.
+همه‌ی کاری که شما در این صفحه باید انجام دهید، کلیک کردن بر روی **بعدی** است.
 
-### License Agreement
+### قرارداد استفاده
 
-You must read and agree to the [license agreement](http://www.mybb.com/about/license) before you can install MyBB. You must adhere to the license agreement at all times while the board is installed. After reading the agreement, click the **Next** button on this page.
+شما باید قبل از اینکه مای بی‌بی را نصب کنید، [قرارداد استفاده](http://www.mybb.com/about/license) آن را بخوانید و تایید کنید. شما باید به توافق‌نامه‌ی استفاده تا زمانی که مای بی‌بی نصب است پایبند باشید. پس از خواندن قرارداد استفاده ، بر روی **بعدی** کلیک کنید.
 
-If you would like more information about the GNU LGPL license and what it means for you [consult the GNU website](http://www.gnu.org/licenses/lgpl.html).
+اگر شما می‌خواهید اطلاعات بیشتری درباره‌ی GNU LGPL license داشته باشید و بدانید که این چه معنی‌ای برای شما دارد، [consult the GNU website](http://www.gnu.org/licenses/lgpl.html) را بخوانید.
 
 [![License screen](/assets/images/install/license.jpg)](/assets/images/install/license.jpg)
 
-### Requirements Check
+### بررسی نیاز مندی‌ها
 
 This page checks that your server meets the [requirements](/install/requirements) for running MyBB. If it does not, you will be notified on this page. If everything is working correctly, all you need to do is click on the **Next** button on this page.
 
