@@ -4,64 +4,60 @@ title:  "بروزرسانی"
 categories: [install]
 ---
 
-## Preparing for your Upgrade
+## آماده‌شدن برای بروزرسانی
 
-Before you upgrade, you should always read the announcement blog post properly before starting. The new version's changes will clearly be explained and provide an insight into how difficult the upgrade will be.
+قبل از اینکه بروزرسانی کنید، شما همیشه باید اطلاعیه‌ای که در بلاگ مای بی‌بی قرار گرفته را به خوبی بخوانید. تا تغییرات نسخه به خوبی برایتان آشکار شود و مقدار سختی بروزرسانی برایتان روشن شود.
 
-1. First, you may want to shut down your forum. Doing this means that no one will interrupt the upgrade process accidentally. Please remember that switching the forum by using the **Board Online/Offline** setting is **not** recommended. The best method is to use a `.htaccess` restriction on your forum's root folder so that no one can access the front-end. There are various tutorials that help you do this and some hosts even provide simple tools to do this.
+1. نخست، شما باید انجمن خود را ببندید. انجام این کار به این دلیل است که هیچ کس فرایند بروزرسانی را به صورت تصادفی قطع نکند. لطفا انجمن خود را از طریق تنظیمات **حاضر/غایت بودن انجمن** و قرار دادن تنظیم بر روی  **خیر** ببندید. 
+ بهترین روش استفاده از `.htaccess` برای بستن انجمن و اجازه ندادن به کسی برای دسترسی به ناحیه کاربری انجمن است. آموزش‌های متعددی وجود دارد که به شما در انجام این کار کمک می‌کند و ممکن است ابزارهایی در برخی از هاست‌ها برای اینکار موجود باشد.
 
-2. Secondly, you should back up your files and database and store them in a safe place. Just in case something goes wrong, you can restore the backup and start again. You can back up the database using the [MyBB Admin CP or your database management software](../administration/backups).
+2. در مرحله‌ی دوم، شما باید پشتیبانی از فایل‌ها و دیتابیس‌تان بگیرید و در جای امنی نگه‌داری کنید. فقط برای اینکه اگر چیز اشتباهی اتفاق افتاد، شما بتوانید پشتیبانتان را بازگردانی کنید و دوباره از نخست شروع کنید.
+شما می‌توانید از طریق [کنترل پنل مای بی‌بی یا ابزار مدیریت پایگاه داده هاستتان](../../administration/backups) از پایگاه داده پشتیبان بگیرید.
 
-3. You must deactivate (or disable) all of your plugins. This is because it is likely they will need to be updated to work on the new version and can cause problems if they are left active.
+3. شما باید همه‌ی پلاگین‌هایتان را غیرفعال کنید. این عمر به این دلیل است که پلاگین‌ها ممکن است نیاز به تغییراتی در نسخه‌ی جدید داشته باشند و فعال بودنشان مشکلاتی را بعد از بروزرسانی به وجود آورد.
 
-### Downloading the Correct Upgrade Package
+### دانلود کردن بسته‌ی بروزرسانی صحیح
 
-There are two different methods of upgrading your forum: full upgrades and a changed files upgrade.
+دو روش برای بروزرسانی انجمنتان وجود دارد: بروزرسانی کامل و بروزرسانی موارد تغییر یافته.
 
-#### Full Upgrade
+#### بروزرسانی کامل
 
-If your current version is more than one point below the newest version, you need to make a full upgrade. For example, if you're using 1.6.1 and the newest version is 1.6.4, then you need a full upgrade. The same applies if you're using 1.6.x and you're upgrading to 1.8.x. You need to use the latest version of the software.
+اگر نسخه‌ی کنونی شما بیش‌از یک نسخه از آخرین نسخه فرق داشت، شما باید یک بروزرسانی کامل انجام دهید. برای مثال، اگر شما از نسخه‌ی ۱.۶.۱ استفاده می‌کنید و جدیدترین نسخه ۱.۶.۴ باشد، شما نیاز به انجام یک بروزرسانی کامل دارید. همچنین اگر شما از نسخه‌ی ۱.۶.× استفاده می‌کنید و می‌خواهید به نسخه‌ی ۱.۸.× ارتقا دهید، بازهم باید از بروزرسانی کامل استفاده کنید.
 
-[Download the latest version](http://mybb.com/download/).
+[دریافت آخرین نسخه](http://my-bb.ir/download/).
 
-#### Changed Files Upgrade
+#### بروزرسانی موارد تغییریافته
 
-If you're just one point behind the newest version - for example, if you're using 1.6.3 and the newest version is 1.6.4 - then you can use the changed files package. This is available in the blog post announcement. If a changed files package is not available then the latest version of the software should be used.
+اگر نسخه‌ی شما تنها یک نسخه با جدیدترین نسخه اختلاف داشته باشد - برای مثال، اگر از نسخه‌ی ۱.۶.۳ استفاده می‌کنید و آخرین نسخه ۱.۶.۴ باشد - شما می‌توانید از بروزرسانی موارد تغییریافته استفاده کنید. این بسته در نوشته‌ی بلاگ موجود است. اگر بسته‌ی موارد تغییریافته موجود نباشد، باید از بسته‌ی کامل آخرین نسخه استفاده شود.
 
-## Beginning the Upgrade
+## شروع یک بروزرسانی
 
-Once you've downloaded the correct upgrade package for you, it's time to do the upgrade. Please follow these steps carefully.
+هنگامی که شما بسته‌ی درست بروزرسانی را دانلود کردید، زمان انجام بروزرانی است. لطفا موارد زیر را با دقت دنبال کنید.
 
-1. Upload **all** of the files and folders inside the package (from inside the `Upload/` folder if using the full package), including the `install/` folder (if it exists), overwriting the existing copies of the files in your file system.
+1. آپلود **همه‌ی** فایل‌ها و پوشه‌ها از بسته (همه‌ی فایل‌های داخل پوشه‌ی `Upload/` اگر از بسته‌ی کامل استفاده می‌کنید)، شامل پوشه `install/` (اگر موجود است)، جایگزینی فایل‌های کپی‌شده با فایل‌های سیستم شما.
 
-2. If the blog post announcement mentions that the upgrade script **is** required, then perform the following:
+2. اگر در اطلاعیه بلاگ اشاره شده بود که اجرای فرایند بروزرسانی لازم **است**، موارد زیر را دنبال کنید:
 
-	1. Open your forum's home page in your web browser and add `/install/` to the URL. For example, `www.yourdomain.com/install/` or `www.yourdomain.com/forum/install/`.
+	1. صفحه‌ی نخست انجمن خود را باز کنید و یک `/install/` به آخر URL آن اضافه کنید. برای مثال `www.yourdomain.com/install/` یا `www.yourdomain.com/forum/install/`.
 
-	2. It might ask you to remove a file called `lock` in this folder. Use an FTP Client or a File Manager to remove the `install/lock` file.
+	2. این ممکن است که از شما درخواست کند تا فایل `lock` را حذف کنید. از یک مدیریت کننده‌ی فایل استفاده کرده و فایل  `install/lock` را حذف کنید.
 
-	3. You should see a drop down list asking what version of MyBB you're upgrading from. Remember to select the correct version - the one you're currently using - or else the upgrade will not work correctly.
+	3. شما باید یک منوی کشویی برای انتخاب نسخه‌ی کنونی خود ببینید. به یاد داشته باشید که حتما نسخه‌ی درست را انتخاب کنید - نسخه‌ای که هم‌اکنون از آن استفاده می‌کنید - درغیراینصورت بروزرسانی به درستی انجام نمی‌شود.
 
-	4. Follow the instructions to run the upgrade.
+	4. دستورالعمل‌ها برای اجرای بروزرسانی را دنبال کنید.
 
-	5. After the upgrade has finished, check that the file called `lock` was created in the `install/` folder. If it is missing, create it yourself or delete the `install/` folder from your server. For extra protection, `chmod 644 inc/config.php`.
+	5. بعد از اینکه بروزرسانی پایان یافت، بررسی کنید که فایل `lock` در پوشه‌ی `install/` ایجاد شده باشد. اگر وجود نداشت، خودتان این فایل را ایجاد کنید یا پوشه‌ی `install/` را از سرور خود حذف کنید. برای امنیت بیشتر، دسترسی فایل `inc/config.php` را برروی ۶۴۴ قرار دهید، اگر می‌توانید دستور اجرا کنید از دستور `chmod 644 inc/config.php` استفاده کنید.
 
-3. If the blog post announcement mentions that there are theme changes, then perform the following:
+3. اگر در نوشته‌ی بلاگ اشاره شده بود که قالب‌ها تغییر کرده اند:
 
-	1. Go to **Admin CP > Templates & Style > Templates > Find Updated Templates**. This will show you a list of all the templates that have changed during the upgrade.
+	1. در مسیر **کنترل پنل مدیریت > قالب‌ها و پوسته‌ها > قالب‌ها > یافتن قالب‌های بروزرسانی شده** بروید. این به شما لیستی از قالب‌هایی که در بروزرسانی نیاز به بروزرسانی دارند را به شما نشان خواهد داد.
 
-	2. You can either revert these templates to their default - meaning all the changes you've made to it will be removed - or you can see a **Diff Report** which will show you exactly what's changed. If you have a custom theme installed, it is probably best that you look at the Diff Report and apply the changes you need.
+	2. شما می‌توانید این قالب‌ها را به نسخه‌ی اصلی بازگردانی کنید - این به این معنی است که همه‌ی تغییراتی که شما ایجاد کرده‌اید از بین خواهد رفت - یا شما می‌توانید **گزارش تغییرات** که به شما تغییراتی که ایجاد شده‌است نشان می‌دهد، استفاده کنید. اگر شما از قالب سفارشی استفاده می کنید، نگاه کردن به تغییرات ایجاد شده در گزارش تغییرات و اعمال تغییرات مورد نیاز است.
 
-4. If the blog post announcement mentions that there are language changes and you've either customised your English language pack (the default pack) or installed a custom language pack, then perform the following:
+4. فرایند بروزرسانی باید پایان یافته باشد! شما نیاز است انجمن خود را دوباره باز کنید، برای اینکار اگر از `.htaccess` برای بستن انجمن استفاده کرده‌اید، کدهای `.htaccess` را حذف کنید و اگر از تنظیمات استفاده کرده‌اید، ازطریق تنظیمات انجمن خود را باز کنید. قبل از انجام اینکار، بررسی کنید که انجمنتان سالم است و همان‌طور که قبلا کار می‌کرد، کار کند! لطفا عجله نکنید.
 
-	1. Check to see if the language pack you're using has already been updated in the [Translation Releases Forum](http://community.mybb.com/forum-169.html). Download and install any updates you need.
+## پایان
 
-	2. If you have made customisations to the packs yourself, or you manage a language pack for MyBB, then read through the blog post announcement for a list of changes to the language packs and apply the changes as necessary.
+اگر شما مشکلی در هر قسمت از فرایند بروزرسانی دارید، [انجمن مای بی‌بی](http://my-bb.ir/) را برای راهنمایی بازدید کنید.
 
-5. The upgrade process should now be complete! You may want to re-open your forum by removing the `.htaccess` block or turning your forum on again. Before you do this, ensure that your forum functions correct and it looks the way it's supposed to look! Take your time don't rush it.
-
-## Conclusion
-
-If you run into any problems at any point of the upgrade process, visit the [Community Forum](http://community.mybb.com/) for help.
-
-Otherwise, *congratulations*! You've just upgraded your forum!
+درغیراین‌صورت، *تبریک می‌گوییم*! شما انجمن خود را بروزرسانی کرده‌اید!
